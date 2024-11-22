@@ -1,17 +1,17 @@
-GreenWorld: Sistema de Consumo Consciente de Energia
+###GreenWorld: Sistema de Consumo Consciente de Energia
 Este código implementa uma plataforma simples e funcional chamada GreenWorld, focada em ajudar os usuários a monitorarem seu consumo de energia elétrica e fornecer recomendações personalizadas para otimizar esse consumo.
 
-Funcionalidades
+##Funcionalidades
 Cadastro de Usuários
 Os usuários podem se registrar utilizando um e-mail e senha. O cadastro é salvo em um banco de dados MongoDB.
 
-Login de Usuários
+##Login de Usuários
 Após o cadastro, o sistema permite que os usuários façam login para acessar suas informações e adicionar seu consumo mensal de energia.
 
-Registro do Consumo de Energia
+##Registro do Consumo de Energia
 Durante a sessão, o usuário informa seu consumo de energia em kWh, que é registrado no sistema.
 
-Geração de Recomendações
+##Geração de Recomendações
 Com base no consumo registrado, o sistema gera uma recomendação personalizada para ajudar o usuário a reduzir desperdícios e promover hábitos mais sustentáveis.
 
 Armazenamento no MongoDB
