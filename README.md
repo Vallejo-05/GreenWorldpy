@@ -1,92 +1,59 @@
-###GreenWorld: Sistema de Consumo Consciente de Energia
-Este código implementa uma plataforma simples e funcional chamada GreenWorld, focada em ajudar os usuários a monitorarem seu consumo de energia elétrica e fornecer recomendações personalizadas para otimizar esse consumo.
+🌱 GreenWorld: Plataforma de Consumo Consciente e Sustentável 🌍
+GreenWorld é uma aplicação desenvolvida com o objetivo de promover um futuro mais sustentável, incentivando os usuários a monitorarem seu consumo de energia elétrica e adotarem práticas mais ecológicas. Com base no consumo de energia dos usuários, a plataforma gera recomendações personalizadas para otimizar o uso de recursos e reduzir o impacto ambiental.
 
-##Funcionalidades
-Cadastro de Usuários
-Os usuários podem se registrar utilizando um e-mail e senha. O cadastro é salvo em um banco de dados MongoDB.
+🚀 Funcionalidades
+A plataforma GreenWorld permite que os usuários se cadastrem, façam login e registrem seu consumo de energia. Após o login, são fornecidas recomendações personalizadas para ajudar a reduzir o consumo e melhorar a eficiência energética.
 
-##Login de Usuários
-Após o cadastro, o sistema permite que os usuários façam login para acessar suas informações e adicionar seu consumo mensal de energia.
+Principais funcionalidades:
 
-##Registro do Consumo de Energia
-Durante a sessão, o usuário informa seu consumo de energia em kWh, que é registrado no sistema.
+Cadastro de usuário: O usuário pode criar uma conta informando seu e-mail e senha.
+Login: A plataforma permite que os usuários façam login com as credenciais criadas.
+Recomendações de consumo: A cada login, o usuário insere seu consumo mensal de energia (em kWh), e com base nisso, a plataforma gera recomendações sobre como reduzir o consumo de energia.
+Armazenamento de dados: Todos os dados dos usuários, como e-mail, senha, consumo e recomendações, são armazenados em um banco de dados MongoDB.
+⚙️ Tecnologias Utilizadas
+MongoDB: Banco de dados NoSQL utilizado para armazenar os dados dos usuários, incluindo e-mail, senha, consumo de energia e recomendações personalizadas.
+Python: A aplicação foi desenvolvida em Python, utilizando bibliotecas como pymongo para interação com o banco de dados e logging para registro de logs e monitoramento da aplicação.
+📋 Como Rodar o Projeto
+1. Instalação do MongoDB
+Certifique-se de que o MongoDB está instalado e em execução na sua máquina. Você pode seguir a documentação oficial do MongoDB para instalar e configurar o MongoDB corretamente.
 
-##Geração de Recomendações
-Com base no consumo registrado, o sistema gera uma recomendação personalizada para ajudar o usuário a reduzir desperdícios e promover hábitos mais sustentáveis.
+2. Instalar Dependências
+Instale a biblioteca pymongo utilizando o seguinte comando:
 
-Armazenamento no MongoDB
-Todas as informações de usuários, consumos e recomendações são armazenadas em um banco de dados MongoDB.
+bash
+Copiar código
+pip install pymongo
+3. Configuração do Banco de Dados
+O código conecta automaticamente ao banco de dados MongoDB na URL mongodb://localhost:27017/ e cria a base de dados greenworld, onde os dados dos usuários serão armazenados.
 
-Logs de Atividades
-O código registra logs de todas as atividades, como cadastros, logins e atualizações de consumo, em um arquivo local para facilitar o monitoramento.
-
-Objetivo
-O objetivo principal deste código é incentivar o uso consciente de energia elétrica por meio de uma abordagem personalizada, promovendo sustentabilidade e eficiência energética.
-
-Pré-requisitos
-Python 3.x
-MongoDB instalado e em execução na porta padrão localhost:27017
-Biblioteca pymongo instalada (pip install pymongo)
-Como Executar
-Configuração do Banco de Dados
-Certifique-se de que o MongoDB esteja em execução. O banco de dados utilizado será greenworld e a coleção usuarios.
-
-Execução do Script
-Execute o script no terminal com o comando:
+4. Executando a Aplicação
+Após garantir que o MongoDB está em execução, execute o script Python:
 
 bash
 Copiar código
 python greenworld.py
-Interação com o Sistema
+5. Interação com a Plataforma
+O usuário poderá interagir com a plataforma através de um menu no terminal:
 
-Escolha entre as opções no menu:
-Cadastrar: Insira seu e-mail e senha para criar uma conta.
-Login: Acesse sua conta e informe seu consumo mensal para receber recomendações.
-Sair: Encerre o programa.
-Fluxo de Operações
-O usuário pode se cadastrar no sistema.
-Após o login, o sistema solicita o consumo mensal de energia (em kWh).
-Com base no consumo informado:
-Valores acima de 500 kWh geram alertas para reduzir o uso de eletrodomésticos e ar-condicionado.
-Valores entre 200 e 500 kWh sugerem ações como a troca de lâmpadas por LEDs.
-Consumos abaixo de 200 kWh recebem mensagens parabenizando o usuário pela eficiência.
-Estrutura de Dados
-Usuários (usuarios):
-json
-Copiar código
-{
-  "_id": "ObjectId",
-  "email": "exemplo@email.com",
-  "senha": "senha123",
-  "consumo": 350,
-  "recomendacao": "Troque lâmpadas por LEDs e use menos eletrônicos."
-}
-Logs
-As operações do sistema, como cadastros, logins e atualizações de consumo, são registradas no arquivo greenworld_logs.txt para fins de monitoramento.
+Cadastro de novo usuário: Ao selecionar a opção de cadastro, o usuário informará seu e-mail e senha.
+Login: Após o cadastro, o usuário pode fazer login inserindo o e-mail e a senha criados.
+Inserção do consumo de energia: Após o login, o usuário deve inserir seu consumo mensal de energia (em kWh), e a plataforma fornecerá recomendações para otimizar esse consumo.
+Encerramento da plataforma: O usuário pode escolher encerrar a plataforma a qualquer momento.
+🔧 Estrutura do Código
+Função conectar_db(): Responsável por estabelecer a conexão com o banco de dados MongoDB.
+Função cadastrar(): Permite o cadastro de um novo usuário verificando se o e-mail já está registrado.
+Função login(): Realiza a autenticação do usuário, comparando o e-mail e a senha fornecidos com os dados no banco de dados.
+Função gerar_recomendacao(): Gera recomendações personalizadas com base no consumo de energia fornecido pelo usuário.
+Função atualizar_consumo(): Atualiza os dados do usuário com o consumo informado e a recomendação gerada.
+Função exibir_recomendacao(): Exibe o consumo mensal de energia e as recomendações personalizadas para o usuário.
+📝 Logs
+A plataforma gera logs de todas as ações executadas, como cadastro, login, e atualizações no banco de dados, para ajudar no monitoramento e solução de problemas. Esses logs são armazenados em um arquivo chamado greenworld_logs.txt.
 
-Exemplo de Uso
-plaintext
-Copiar código
-Bem vindo a GreenWorld! 
-1 - Cadastrar
-2 - Login
-3 - Sair
-Escolha uma opção: 1
-Digite seu e-mail: usuario@email.com
-Digite sua senha: senha123
-Cadastro concluído! Por favor, faça login.
+📧 Contato
+Caso tenha dúvidas ou sugestões, entre em contato com o desenvolvedor através do e-mail: greenworld@suporte.com
 
-Escolha uma opção: 2
-Digite seu e-mail: usuario@email.com
-Digite sua senha: senha123
-Login realizado com sucesso!
-Digite seu consumo mensal de energia (em kWh): 400
-Bem-vindo(a), usuario@email.com!
-Seu consumo mensal de energia: 400 kWh
-Recomendação personalizada: Troque lâmpadas por LEDs e use menos eletrônicos.
-A plataforma GreenWorld é uma ferramenta prática e educativa que promove o uso consciente de energia, contribuindo para um futuro mais sustentável.
-
-
+🛠️ Contribuindo
+Sinta-se à vontade para contribuir com este projeto! Se você quiser sugerir melhorias ou corrigir problemas, fique à vontade para abrir uma pull request.
 
 
 
