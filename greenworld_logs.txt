@@ -1,0 +1,40 @@
+2024-11-21 00:17:51,840 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:18:18,127 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:18:18,135 - INFO - Usuário Alice adicionado com sucesso.
+2024-11-21 00:18:18,135 - INFO - Usuário Bob adicionado com sucesso.
+2024-11-21 00:18:18,136 - INFO - Usuário Carol adicionado com sucesso.
+2024-11-21 00:18:18,149 - INFO - Recomendação gerada para o usuário Alice: Reduzir o uso de ar condicionado e otimizar o uso de eletrodomésticos.
+2024-11-21 00:18:18,150 - INFO - Recomendação gerada para o usuário Bob: Troque lâmpadas por LEDs e considere usar menos eletrônicos.
+2024-11-21 00:18:18,150 - INFO - Recomendação gerada para o usuário Carol: Ótimo consumo! Continue monitorando seu uso.
+2024-11-21 00:21:25,888 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:22:50,106 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:23:00,398 - INFO - Usuário cadastrado: gabri
+2024-11-21 00:23:06,639 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:23:35,882 - INFO - Login bem-sucedido: gabri
+2024-11-21 00:23:41,498 - INFO - Usuário gabriel adicionado com sucesso.
+2024-11-21 00:23:41,512 - INFO - Recomendação gerada para o usuário gabriel: Troque lâmpadas por LEDs e considere usar menos eletrônicos.
+2024-11-21 00:25:12,888 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:25:17,787 - INFO - Usuário cadastrado: gabriel
+2024-11-21 00:25:20,438 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:25:26,217 - INFO - Login bem-sucedido: gabriel
+2024-11-21 00:25:30,907 - INFO - Usuário gabriel adicionado com sucesso.
+2024-11-21 00:25:30,921 - INFO - Recomendação gerada para o usuário gabriel: Troque lâmpadas por LEDs e considere usar menos eletrônicos.
+2024-11-21 00:28:23,488 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:28:39,413 - INFO - Usuário cadastrado: 123
+2024-11-21 00:29:54,860 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:32:24,006 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 00:32:30,627 - INFO - Usuário cadastrado: gabriel
+2024-11-21 00:32:38,540 - INFO - Login bem-sucedido: gabriel
+2024-11-21 00:32:42,474 - INFO - Consumo e recomendação atualizados para gabriel.
+2024-11-21 00:33:13,180 - INFO - Tentativa de cadastro com e-mail já existente: gabriel
+2024-11-21 00:37:28,737 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 19:30:48,690 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 19:32:13,190 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 19:34:14,672 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 19:34:50,714 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 19:35:04,804 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 19:46:22,297 - INFO - Conexão com MongoDB bem-sucedida.
+2024-11-21 21:03:30,990 - INFO - Usuário cadastrado: teste@gmail.com
+2024-11-21 21:03:38,833 - WARNING - Falha no login: qefgrquife
+2024-11-21 21:04:00,310 - INFO - Login bem-sucedido: teste@gmail.com
+2024-11-21 21:04:09,930 - INFO - Consumo e recomendação atualizados para teste@gmail.com.
