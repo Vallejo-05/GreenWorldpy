@@ -1,4 +1,4 @@
-🌱 GreenWorld: Plataforma de Consumo Consciente e Sustentável 🌍
+🌱 ##GreenWorld: Plataforma de Consumo Consciente e Sustentável 🌍
 GreenWorld é uma aplicação desenvolvida com o objetivo de promover um futuro mais sustentável, incentivando os usuários a monitorarem seu consumo de energia elétrica e adotarem práticas mais ecológicas. Com base no consumo de energia dos usuários, a plataforma gera recomendações personalizadas para otimizar o uso de recursos e reduzir o impacto ambiental.
 
 🚀 Funcionalidades
